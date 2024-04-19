@@ -22,3 +22,11 @@ ul,
 ul>li {
   background-color: white;
 }
+
+ul>li:hover {
+  cursor: pointer;
+}
+
+.enhance {
+  text-shadow: 2px 2px #101010, 2px -2px #101010, -2px 2px #101010, -2px -2px #101010, 4px 4px 2px #000;
+}
