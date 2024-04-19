@@ -1,9 +1,12 @@
-import { Button } from "@components/ui/button"
+import { Button } from "@components/ui/button";
+import { Card } from "@components/ui/card";
 const Home = () => {
     return (
-        <>
-            <Button className="text-5xl">Hello</Button>
-        </>
+        <div className="h-screen">
+            <section className="h-[95%] bg-gradient-to-b from-[#FFB81E] to-[#F5C84F] rounded-b-[100px] ">
+
+            </section>
+        </div>
     )
 }
 
