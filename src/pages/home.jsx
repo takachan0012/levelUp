@@ -146,8 +146,13 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="-mt-32 h-[110%] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
-
+            <section id="list-product" className="-mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
+                <div className="mt-64 w-[97%] bg-red-500 h-[1262px] flex flex-col items-center">
+                    <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
+                        <span>Mastering Your Skills With Real-World</span>
+                        <span>Projects Essential In Today's Professional Landscape</span>
+                    </div>
+                </div>
             </section>
         </div>
     )
