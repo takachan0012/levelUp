@@ -2,6 +2,12 @@ import { Button } from "@components/ui/button";
 import { Card } from "@components/ui/card";
 import { Badges } from "@components/ui/fragments/badges";
 import { Product } from "@components/ui/fragments/product";
+import {
+    Tabs,
+    TabsList,
+    TabsTrigger,
+    TabsContent
+} from "@components/ui/tabs";
 const Home = () => {
     return (
         <div className="h-screen">
@@ -147,11 +153,30 @@ const Home = () => {
                 </div>
             </section>
             <section id="list-product" className="-mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
-                <div className="mt-64 w-[97%] bg-red-500 h-[1262px] flex flex-col items-center">
+                <div className="mt-64 w-[97%] h-[1262px] flex flex-col items-center">
                     <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
                         <span>Mastering Your Skills With Real-World</span>
                         <span>Projects Essential In Today's Professional Landscape</span>
                     </div>
+                    <Tabs defaultValue="new-years-promo" className="w-full mt-[52px]">
+                        <TabsList className="flex justify-between">
+                            <TabsTrigger value="new-years-promo">New Years Promos</TabsTrigger>
+                            <TabsTrigger value="3d-artist">3D Artist</TabsTrigger>
+                            <TabsTrigger value="animations">Animations</TabsTrigger>
+                            <TabsTrigger value="copywriting">Copywriting</TabsTrigger>
+                            <TabsTrigger value="development">Development</TabsTrigger>
+                            <TabsTrigger value="graphich design">Graphich Design</TabsTrigger>
+                            <TabsTrigger value="illustration">Illustration</TabsTrigger>
+                        </TabsList>
+                        <TabsContent value="new-years-promo">
+                            <div className="flex flex-col items-center">
+                                <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
+                                    <span>Mastering Your Skills With Real-World</span>
+                                    <span>Projects Essential In Today's Professional Landscape</span>
+                                </div>
+                            </div>
+                        </TabsContent>
+                    </Tabs>
                 </div>
             </section>
         </div>
