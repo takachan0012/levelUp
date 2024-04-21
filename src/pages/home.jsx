@@ -5,7 +5,7 @@ import { Product } from "@components/ui/fragments/product";
 const Home = () => {
     return (
         <div className="h-screen">
-            <section className="h-[110%] bg-gradient-to-b from-[#FFB81E] to-[#F5C84F] rounded-b-[100px] flex items-center flex-col">
+            <section className="relative h-[110%] bg-gradient-to-b from-[#FFB81E] to-[#F5C84F] rounded-b-[100px] flex items-center flex-col">
                 <header id="header" className="flex justify-between items-center w-[97%] h-20 bg-white mt-[30px] rounded-full border-[#101010] border-t-2 border-r-4 border-b-4 border-l-2 p-4">
                     <div className="w-[170px] flex items-center gap-2 hover:cursor-pointer">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,6 +127,27 @@ const Home = () => {
                         />
                     </div>
                 </div>
+                <div id="achievement" className="absolute -bottom-10 bg-white border-[#101010] flex items-center w-[87%] h-[160px] rounded-xl border-t-2 border-r-4 border-b-4 border-l-2 p-0">
+                    <div className="flex flex-col text-center w-80 h-[71px] border-r border-[#DFE1E6]">
+                        <span className="font-bold text-[40px] leading-[48px]">3.120+</span>
+                        <span className="font-medium leading-[19px]">Total Courses</span>
+                    </div>
+                    <div className="flex flex-col text-center w-80 h-[71px] border-r border-[#DFE1E6]">
+                        <span className="font-bold text-[40px] leading-[48px]">1.260+</span>
+                        <span className="font-medium leading-[19px]">Total Mentor</span>
+                    </div>
+                    <div className="flex flex-col text-center w-80 h-[71px] border-r border-[#DFE1E6]">
+                        <span className="font-bold text-[40px] leading-[48px]">120.521+</span>
+                        <span className="font-medium leading-[19px]">Total Students</span>
+                    </div>
+                    <div className="flex flex-col text-center w-80 h-[71px]">
+                        <span className="font-bold text-[40px] leading-[48px]">5+</span>
+                        <span className="font-medium leading-[19px]">Years Experience</span>
+                    </div>
+                </div>
+            </section>
+            <section className="-mt-32 h-[110%] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
+
             </section>
         </div>
     )
