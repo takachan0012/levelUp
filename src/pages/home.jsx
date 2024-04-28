@@ -167,7 +167,7 @@ const Home = () => {
                         <span>Projects Essential In Today's Professional Landscape</span>
                     </div>
                     <Tabs defaultValue="new-years-promo" className="w-full mt-[52px]">
-                        <TabsList className="flex justify-between">
+                        <TabsList className="flex justify-around">
                             <TabsTrigger value="new-years-promo">New Years Promos</TabsTrigger>
                             <TabsTrigger value="3d-artist">3D Artist</TabsTrigger>
                             <TabsTrigger value="animations">Animations</TabsTrigger>
