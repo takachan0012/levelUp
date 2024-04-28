@@ -15,8 +15,8 @@ import avatar4 from "@assets/avatar/image-4.png";
 const CourseCard = forwardRef(({ className, ...props }, ref) => (
     <Card
         className={cn("w-[405px] bg-transparent h-[457px] rounded-[4px] border-t-2 border-r-4 border-b-4 border-l-2 border-[#ffffff08] p-0", className)}>
-        <CardHeader className="bg-[#ffffff4d] rounded-[4px] p-0">
-            <img src={props.image} alt={`icon-${props.title}`} className="h-[233px]" />
+        <CardHeader className="bg-[#ffffff4d] rounded-[4px] p-0 h-[233px] relative overflow-hidden">
+            <img src={props.image} alt={`icon-${props.title}`} className="h-[450px] w-[430px] absolute top-0 left-0" />
         </CardHeader>
         <CardContent className="w-[405px] h-[224px] p-[24px]">
             <section id="total-member" className="w-[357px] h-[42px] flex justify-between items-center">
