@@ -1,5 +1,4 @@
 import { Button } from "@components/ui/button";
-import { Card } from "@components/ui/card";
 import { Badges } from "@components/ui/fragments/badges";
 import { Product } from "@components/ui/fragments/product";
 import {
@@ -167,7 +166,7 @@ const Home = () => {
                         <span>Projects Essential In Today's Professional Landscape</span>
                     </div>
                     <Tabs defaultValue="new-years-promo" className="w-full mt-[52px]">
-                        <TabsList className="flex justify-around">
+                        <TabsList className="flex justify-around my-11">
                             <TabsTrigger value="new-years-promo">New Years Promos</TabsTrigger>
                             <TabsTrigger value="3d-artist">3D Artist</TabsTrigger>
                             <TabsTrigger value="animations">Animations</TabsTrigger>
@@ -176,34 +175,211 @@ const Home = () => {
                             <TabsTrigger value="graphich design">Graphich Design</TabsTrigger>
                             <TabsTrigger value="illustration">Illustration</TabsTrigger>
                         </TabsList>
-                        <TabsContent value="new-years-promo" className="grid grid-rows-2 grid-cols-3 gap-[32px] my-[32px]">
-                            <CourseCard
-                                image={iconMastering}
-                                title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
-                            />
-                            <CourseCard
-                                image={iconsFromConcept}
-                                title="From Concept to Motion: Mastering Animation Principles"
-                            />
-                            <CourseCard
-                                image={iconVirtual}
-                                title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
-                            />
-                            <CourseCard
-                                image={iconWebDev}
-                                title="Web Development Unleashed: A Comprehensive Course"
-                            />
-                            <CourseCard
-                                image={iconIlustration}
-                                title="Digital Illustration Masterclass: Unleash Your Creative Potential"
-                            />
-                            <CourseCard
-                                image={iconTheArtOfPersuation}
-                                title="The Art of Persuasion: Copywriting Excellence for Success"
-                            />
+                        <TabsContent value="new-years-promo">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="3d-artist">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="animations">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="copywriting">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="development">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="graphich design">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="illustration">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-[32px]">
+                                <CourseCard
+                                    image={iconVirtual}
+                                    title="Creating Virtual Realities: Advanced 3D Artistry Workshop"
+                                />
+                                <CourseCard
+                                    image={iconIlustration}
+                                    title="Digital Illustration Masterclass: Unleash Your Creative Potential"
+                                />
+                                <CourseCard
+                                    image={iconMastering}
+                                    title="Mastering User-Centric Design: A Comprehensive UI/UX Course"
+                                />
+                                <CourseCard
+                                    image={iconTheArtOfPersuation}
+                                    title="The Art of Persuasion: Copywriting Excellence for Success"
+                                />
+                                <CourseCard
+                                    image={iconsFromConcept}
+                                    title="From Concept to Motion: Mastering Animation Principles"
+                                />
+                                <CourseCard
+                                    image={iconWebDev}
+                                    title="Web Development Unleashed: A Comprehensive Course"
+                                />
+                            </div>
                         </TabsContent>
                     </Tabs>
                 </div>
+                <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px]">
+                    <span className="font-bold">view more</span>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
+                    </svg>
+
+                </Button>
             </section>
         </div>
     )
