@@ -16,7 +16,7 @@ const CourseCard = forwardRef(({ className, ...props }, ref) => (
     <Card
         className={cn("w-[405px] bg-transparent h-[457px] rounded-[4px] border-t-2 border-r-4 border-b-4 border-l-2 border-[#ffffff08] p-0", className)}>
         <CardHeader className="bg-[#ffffff4d] rounded-[4px] p-0 h-[233px] relative overflow-hidden">
-            <img src={props.image} alt={`icon-${props.title}`} className="h-[450px] w-[430px] absolute top-0 left-0" />
+            <img src={props.image} alt={`icon-${props.title}`} className="h-[450px] w-[430px] absolute top-0 left-0 hover:scale-150 transition-all delay-100" />
         </CardHeader>
         <CardContent className="w-[405px] h-[224px] p-[24px]">
             <section id="total-member" className="w-[357px] h-[42px] flex justify-between items-center">
@@ -31,7 +31,7 @@ const CourseCard = forwardRef(({ className, ...props }, ref) => (
                     <span className="text-[#91909E] font-medium">Member has joined</span>
                 </div>
             </section>
-            <CardTitle className="text-white my-4">{props.title}</CardTitle>
+            <CardTitle className="text-white my-4 hover:cursor-pointer">{props.title}</CardTitle>
             <div className="w-[237px] h-[38px] flex gap-3 items-center">
                 <strike className="font-bold text-[#91909E] text-[20px]">Rp520.000</strike>
                 <span className="font-bold text-[24px] text-[#43FFA5]">Rp99.999</span>
