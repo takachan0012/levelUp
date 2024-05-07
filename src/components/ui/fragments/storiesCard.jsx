@@ -5,11 +5,6 @@ import {
     CardFooter
 } from "@components/ui/card";
 import { cn } from "@/lib/utils"
-import avatar1 from "@assets/avatar/image-1.png";
-import avatar2 from "@assets/avatar/image-2.png";
-import avatar3 from "@assets/avatar/image-3.png";
-import avatar4 from "@assets/avatar/image-4.png";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const StoriesCard = forwardRef(({ className, ...props }, ref) => (
@@ -25,14 +20,13 @@ const StoriesCard = forwardRef(({ className, ...props }, ref) => (
         <CardContent className="w-[312px] h-[160px] my-6 p-0">
             <p className="text-[20px] font-bold leading-8 text-white">
                 {props.title}
-                “The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience”
             </p>
         </CardContent>
         <CardFooter className="p-0 flex items-center gap-3">
-            <img src={avatar1} alt="avatar" className="w-[56px] rounded-full" />
+            <img src={props.image} alt="avatar" className="w-[56px] rounded-full" />
             <div className="flex flex-col">
-                <span className="font-semibold leading-[19.2px] text-white">Mazen Drego</span>
-                <span className="font-medium text-[#91909E] text-[12px] leading-[14.4px]">CMO, Parlementte</span>
+                <span className="font-semibold leading-[19.2px] text-white">{props.name}</span>
+                <span className="font-medium text-[#91909E] text-[12px] leading-[14.4px]">{props.description}</span>
             </div>
         </CardFooter>
     </Card >

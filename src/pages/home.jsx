@@ -15,6 +15,17 @@ import iconsFromConcept from "@assets/from-concept-to-motion.png";
 import iconTheArtOfPersuation from "@assets/the-art-of-persuasion.png";
 import iconWebDev from "@assets/web-development.png";
 import { StoriesCard } from "@/components/ui/fragments/storiesCard";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious
+} from "@/components/ui/carousel";
+import avatar1 from "@assets/avatar/image-1.png";
+import avatar2 from "@assets/avatar/image-2.png";
+import avatar3 from "@assets/avatar/image-3.png";
+import avatar4 from "@assets/avatar/image-4.png";
 
 const Home = () => {
     return (
@@ -381,11 +392,61 @@ const Home = () => {
                     </svg>
 
                 </Button>
-                <section id="stories-card">
-                    <StoriesCard />
+                <section id="stories-card bg-">
+                    <Carousel
+                        className="w-3/4 bg-red-500"
+                        opts={{
+                            align: "start",
+                        }}
+                    >
+                        <CarouselPrevious />
+                        <CarouselNext />
+                        <CarouselContent className="">
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
+                                    image={avatar1}
+                                    name="Mazen Drego"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
+                                    image={avatar1}
+                                    name="Mazen Drego"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
+                                    image={avatar1}
+                                    name="Mazen Drego"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
+                                    image={avatar1}
+                                    name="Mazen Drego"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
+                                    image={avatar1}
+                                    name="Mazen Drego"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                        </CarouselContent>
+                    </Carousel>
                 </section>
             </section>
-        </div>
+        </div >
     )
 }
 
