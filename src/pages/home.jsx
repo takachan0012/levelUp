@@ -14,6 +14,7 @@ import iconIlustration from "@assets/digital-ilustration.png";
 import iconsFromConcept from "@assets/from-concept-to-motion.png";
 import iconTheArtOfPersuation from "@assets/the-art-of-persuasion.png";
 import iconWebDev from "@assets/web-development.png";
+import { StoriesCard } from "@/components/ui/fragments/storiesCard";
 
 const Home = () => {
     return (
@@ -380,6 +381,9 @@ const Home = () => {
                     </svg>
 
                 </Button>
+                <section id="stories-card">
+                    <StoriesCard />
+                </section>
             </section>
         </div>
     )
