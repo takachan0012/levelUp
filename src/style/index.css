@@ -30,3 +30,8 @@ ul>li:hover {
 .enhance {
   text-shadow: 2px 2px #101010, 2px -2px #101010, -2px 2px #101010, -2px -2px #101010, 4px 4px 2px #000;
 }
+
+.lazy-load-image-background.blur.lazy-load-image-loaded>img:hover {
+  scale: 1.5;
+  transition: scale 1s !important;
+}
