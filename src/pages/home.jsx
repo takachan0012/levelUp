@@ -171,7 +171,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section id="list-product" className="-mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
+            <section id="list-product" className="w-screen -mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
                 <div className="mt-64 w-[97%] h-[1262px] flex flex-col items-center">
                     <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
                         <span>Mastering Your Skills With Real-World</span>
@@ -392,16 +392,18 @@ const Home = () => {
                     </svg>
 
                 </Button>
-                <section id="stories-card bg-">
+                <section id="stories-card" className="w-full flex justify-between bg-blue-600">
                     <Carousel
-                        className="w-3/4 bg-red-500"
-                        opts={{
-                            align: "start",
-                        }}
+                        className="w-full bg-red-500 flex"
                     >
-                        <CarouselPrevious />
-                        <CarouselNext />
-                        <CarouselContent className="">
+                        <div>
+                            <div className="w-[360px] flex justify-center items-center">
+                                <h2 className="text-white text-[32px] font-bold">Stories</h2>
+                            </div>
+                            <CarouselPrevious />
+                            <CarouselNext />
+                        </div>
+                        <CarouselContent>
                             <CarouselItem className="basis-1/3">
                                 <StoriesCard
                                     title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
