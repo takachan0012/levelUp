@@ -392,18 +392,20 @@ const Home = () => {
                     </svg>
 
                 </Button>
-                <section id="stories-card" className="w-full flex justify-between bg-blue-600">
+                <section id="stories-card" className="w-[97%] my-28">
                     <Carousel
-                        className="w-full bg-red-500 flex"
+                        className="w-full flex items-center gap-8"
                     >
-                        <div>
-                            <div className="w-[360px] flex justify-center items-center">
-                                <h2 className="text-white text-[32px] font-bold">Stories</h2>
+                        <div className="h-[244px]">
+                            <div className="w-[360px] flex justify-center flex-col items-center gap-4 mb-4">
+                                <h2 className="text-white text-[36px] font-bold leading-[54px]">Real Success Stories From Our Students</h2>
+                                <p className="font-medium text-[#91909E]">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. </p>
                             </div>
-                            <CarouselPrevious />
-                            <CarouselNext />
+                            <CarouselPrevious className="rounded-full" />
+                            <CarouselNext className="rounded-full ms-4" />
                         </div>
-                        <CarouselContent>
+                        <CarouselContent className="-ml-8">
                             <CarouselItem className="basis-1/3">
                                 <StoriesCard
                                     title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
@@ -414,8 +416,24 @@ const Home = () => {
                             </CarouselItem>
                             <CarouselItem className="basis-1/3">
                                 <StoriesCard
+                                    title="The comprehensive material and supportive instructors made this online course a game-changer for my professional development"
+                                    image={avatar2}
+                                    name="Taka"
+                                    description="Founder, Boldly"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
                                     title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
-                                    image={avatar1}
+                                    image={avatar3}
+                                    name="Luis Figo"
+                                    description="CMO, Parlementte"
+                                />
+                            </CarouselItem>
+                            <CarouselItem className="basis-1/3">
+                                <StoriesCard
+                                    title="The comprehensive material and supportive instructors made this online course a game-changer for my professional development."
+                                    image={avatar4}
                                     name="Mazen Drego"
                                     description="CMO, Parlementte"
                                 />
@@ -424,24 +442,8 @@ const Home = () => {
                                 <StoriesCard
                                     title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
                                     image={avatar1}
-                                    name="Mazen Drego"
-                                    description="CMO, Parlementte"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3">
-                                <StoriesCard
-                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
-                                    image={avatar1}
-                                    name="Mazen Drego"
-                                    description="CMO, Parlementte"
-                                />
-                            </CarouselItem>
-                            <CarouselItem className="basis-1/3">
-                                <StoriesCard
-                                    title="The online course exceeded my expectations! The engaging content and interactive sessions truly enhanced my learning experience"
-                                    image={avatar1}
-                                    name="Mazen Drego"
-                                    description="CMO, Parlementte"
+                                    name="Ozil"
+                                    description="Atlet, FIFA"
                                 />
                             </CarouselItem>
                         </CarouselContent>
