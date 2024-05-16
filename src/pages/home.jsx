@@ -26,11 +26,20 @@ import avatar1 from "@assets/avatar/image-1.png";
 import avatar2 from "@assets/avatar/image-2.png";
 import avatar3 from "@assets/avatar/image-3.png";
 import avatar4 from "@assets/avatar/image-4.png";
+import { BenefitCard } from "@/components/ui/fragments/benefitCard";
+import toga from "@assets/icon/toga_icon.svg";
+import qna from "@assets/icon/qna_icon.svg";
+import progressTracking from "@assets/icon/progress_tracking_icon.svg";
+import mentorShip from "@assets/icon/mentorship_icon.svg";
+import privateGroup from "@assets/icon/private_group_icon.svg";
+import fullTime from "@assets/icon/full_time_icon.svg";
+import realWordProject from "@assets/icon/real_world_project_icon.svg";
+import community from "@assets/icon/community_icon.svg";
 
 const Home = () => {
     return (
         <div className="h-screen">
-            <section className="relative h-[110%] bg-gradient-to-b from-[#FFB81E] to-[#F5C84F] rounded-b-[100px] flex items-center flex-col">
+            <section className="relative h-[110%] bg-gradient-to-b from-[#FFB81E] to-[#F5C84F] rounded-b-[100px] flex items-center flex-col z-50">
                 <header id="header" className="flex justify-between items-center w-[97%] h-20 bg-white mt-[30px] rounded-full border-[#101010] border-t-2 border-r-4 border-b-4 border-l-2 p-4">
                     <div className="w-[170px] flex items-center gap-2 hover:cursor-pointer">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +180,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section id="list-product" className="w-screen -mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col">
+            <section id="list-product" className="relative w-screen -mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col z-40">
                 <div className="mt-64 w-[97%] h-[1262px] flex flex-col items-center">
                     <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
                         <span>Mastering Your Skills With Real-World</span>
@@ -449,6 +458,65 @@ const Home = () => {
                         </CarouselContent>
                     </Carousel>
                 </section>
+            </section>
+            <section id="learning-quest" className="relative w-screen h-[2242px] bg-[#6513D0] -mt-28 flex justify-center">
+                <div id="benefit-cards-list" className="grid grid-cols-3 grid-rows-3 gap-6 absolute mt-[232px] w-[1280px] h-[714px] rounded-[4px]">
+                    <BenefitCard
+                        icon={toga}
+                        title="Free Update Course"
+                        description="No Limit for learning 🔥"
+                        content="Gain an unparalleled advantage with 'Full-time Access' to our online courses. Enjoy unrestricted learning at your own pace, anytime, anywhere."
+                        className="bg-[#FFB81E]"
+                        classNameDescription="text-black"
+                    />
+                    <BenefitCard
+                        icon={qna}
+                        title="Live Q&A Sessions"
+                        description="Weekly live session with mentor"
+                        content="Facilitate dynamic and engaging live Q&A sessions, where participants have the exclusive opportunity to interact directly with seasoned instructors and industry experts."
+                    />
+                    <BenefitCard
+                        icon={progressTracking}
+                        title="Progress Tracking"
+                        description="Stay on course. Learn what you love"
+                        content="Empower participants with intuitive and accessible progress tracking tools designed
+                        to offer a comprehensive overview of their learning journey."
+                    />
+                    <BenefitCard
+                        icon={mentorShip}
+                        title="Mentorship Program"
+                        description="Stuck? Mentor consult for progress"
+                        content="Extend a unique opportunity for participants to access a distinguished cadre of expert mentors, possessing a wealth of experience and knowledge in their respective fields."
+                    />
+                    <BenefitCard
+                        children="The Advantages Of Learning Online On The Bimore Platform."
+                        className="p-0 flex items-center bg-transparent border-none text-white"
+                    />
+                    <BenefitCard
+                        icon={privateGroup}
+                        title="Private Group Discussion"
+                        description="Casual Discussion with a Mentor"
+                        content="Enjoy the perk of a 'Private Discussion'—a special space for you and fellow learners. Dive into focused conversations, ask questions, and collaborate in a secure environment."
+                    />
+                    <BenefitCard
+                        icon={fullTime}
+                        title="Full-time Access"
+                        description="Learn everywhere and anytime"
+                        content="Gain an unparalleled advantage with 'Full-time Access' to our online courses. Enjoy unrestricted learning at your own pace, anytime, anywhere."
+                    />
+                    <BenefitCard
+                        icon={realWordProject}
+                        title="Real-World Project"
+                        description="Explore real-world projects."
+                        content="Immerse participants in a transformative learning experience by providing them with exclusive access to real-world projects and intricate industry case studies."
+                    />
+                    <BenefitCard
+                        icon={community}
+                        title="Community Engagement"
+                        description="Foster collaboration & gain fresh insights"
+                        content="Foster a vibrant and interconnected learning ecosystem through the creation of a robust  community, specially tailored to elevate the educational experience for our participants."
+                    />
+                </div>
             </section>
         </div >
     )
