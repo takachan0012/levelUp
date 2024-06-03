@@ -35,6 +35,9 @@ import privateGroup from "@assets/icon/private_group_icon.svg";
 import fullTime from "@assets/icon/full_time_icon.svg";
 import realWordProject from "@assets/icon/real_world_project_icon.svg";
 import community from "@assets/icon/community_icon.svg";
+import {
+    ChallengeCard
+} from "@components/ui/fragments/challengeCard";
 
 const Home = () => {
     return (
@@ -459,8 +462,8 @@ const Home = () => {
                     </Carousel>
                 </section>
             </section>
-            <section id="learning-quest" className="relative w-screen h-[2242px] bg-[#6513D0] -mt-28 flex justify-center">
-                <div id="benefit-cards-list" className="grid grid-cols-3 grid-rows-3 gap-6 absolute mt-[232px] w-[1280px] h-[714px] rounded-[4px]">
+            <section id="learning-quest" className="w-screen h-[2242px] bg-[#6513D0] -mt-28 flex justify-center flex-col items-center">
+                <div id="benefit-cards-list" className="grid grid-cols-3 grid-rows-3 gap-6 mt-[232px] w-[1280px] h-[714px] rounded-[4px]">
                     <BenefitCard
                         icon={toga}
                         title="Free Update Course"
@@ -515,6 +518,20 @@ const Home = () => {
                         title="Community Engagement"
                         description="Foster collaboration & gain fresh insights"
                         content="Foster a vibrant and interconnected learning ecosystem through the creation of a robust  community, specially tailored to elevate the educational experience for our participants."
+                    />
+                </div>
+                <div id="learning-quest-challenge" className="grid grid-cols-3 grid-rows-3 gap-6 mt-[120px] w-[1280px] h-[874px] rounded-[4px]">
+                    <ChallengeCard
+                        icon={iconMastering}
+                    />
+                    <ChallengeCard
+                        icon={iconMastering}
+                    />
+                    <ChallengeCard
+                        icon={iconMastering}
+                    />
+                    <ChallengeCard
+                        icon={iconMastering}
                     />
                 </div>
             </section>
