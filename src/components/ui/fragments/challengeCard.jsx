@@ -11,11 +11,11 @@ const ChallengeCard = forwardRef(({ className, ...props }, ref) => {
             </CardHeader>
             <div className="p-4">
                 <div>
-                    <span className="text-base leading-[19px] text-[#4B5FDC]">Animation &bull; </span>
+                    <span className="text-base leading-[19px] text-[#4B5FDC]">{props.category} &bull; </span>
                     <span className="text-base leading-[19px] text-[#F5476F]">Expert Level</span>
                 </div>
-                <CardTitle className="font-bold text-[20px] leading-7">Animate the Extraordinary: Motion Mastery Challenge</CardTitle>
-                <span className="font-semibold text-[14px] leading-[22px] text-[#737373] line-clamp-1">Step into the realm of animation with our 'Animate the Extraordinary' challenge.</span>
+                <CardTitle className="font-bold text-[20px] leading-7">{props.title}</CardTitle>
+                <span className="font-semibold text-[14px] leading-[22px] text-[#737373] line-clamp-1">{props.description}</span>
                 <div className="flex justify-between py-4">
                     <Button className="w-[60px] h-[60px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
