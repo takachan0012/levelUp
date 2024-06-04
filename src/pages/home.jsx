@@ -521,8 +521,8 @@ const Home = () => {
                     />
                 </div>
                 <div id="learning-quest-challenge" className="grid grid-cols-3 gap-6 mt-[120px] w-[1280px] h-[874px] rounded-[4px]">
-                    <div className="p-0 w-[406px] h-[421px] rounded-[4px] border-t-2 border-r-4 border-b-4 border-l-2 border-[#101010]">
-                        <Badges>
+                    <div className="p-0 w-[406px] h-[421px] rounded-[4px] flex flex-col justify-center items-center">
+                        <Badges className="w-fit">
                             <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_139_186)">
                                     <path d="M8.50001 20C12.7526 20 16.5 17 16.5 13C16.5 9 13.5 7 12.5 6C11.0939 4.5939 10.6521 2.74612 10.5254 1.4746C10.4552 0.770672 9.77593 0.271446 9.18639 0.662434C8.03352 1.42702 6.40375 2.98749 5.5 6C4.85747 8.14176 5.5 10 5.5 10C5.5 10 4.5 9.5 4 8C3.8353 7.5059 3.61635 6.90329 3.39675 6.31727C3.08071 5.47387 1.94066 5.48134 1.6629 6.33811C1.11497 8.0282 0.5 10.3031 0.5 12C0.5 17 4.24745 20 8.50001 20Z" fill="white" />
@@ -542,6 +542,15 @@ const Home = () => {
                             </svg>
                             <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
                         </Badges>
+                        <span className="text-white text-shadow-sm font-bold text-[36px] leading-[43px] text-center">Learning Quests: Interactive Challenges
+                            for Skill Mastery</span>
+                        <p className="text-shadow-sm font-semibold text-white text-center mt-4 mb-[52px]">Learning journey with our series of interactive challenges designed for skill mastery.</p>
+                        <Button className="py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px] bg-[#FFB81E]">
+                            <span className="font-bold">Start Learning</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2928 17.7929C11.9023 18.1834 11.9023 18.8166 12.2928 19.2071C12.6833 19.5976 13.3165 19.5976 13.707 19.2071L16.6035 16.3107L20.4999 13.4142C21.281 12.6332 21.281 11.3668 20.4999 10.5858L16.6035 7.68934L13.707 4.79289C13.3165 4.40237 12.6833 4.40237 12.2928 4.79289C11.9023 5.18342 11.9023 5.81658 12.2928 6.20711L14.6893 8.60355L18.0857 11H3.99991C3.44763 11 2.99991 11.4477 2.99991 12C2.99991 12.5523 3.44763 13 3.99991 13H18.0857L14.6893 15.3964L12.2928 17.7929Z" fill="#101010" />
+                            </svg>
+                        </Button>
                     </div>
                     <ChallengeCard
                         icon={iconMastering}
