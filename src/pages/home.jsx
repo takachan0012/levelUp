@@ -38,7 +38,7 @@ import community from "@assets/icon/community_icon.svg";
 import {
     ChallengeCard
 } from "@components/ui/fragments/challengeCard";
-
+import { Faq } from "@/components/ui/fragments/faq";
 const Home = () => {
     return (
         <div className="h-screen">
@@ -588,11 +588,21 @@ const Home = () => {
                     />
                 </div>
             </section>
-            <section id="learning-quest" className="w-screen h-[2242px] bg-[#fff] rounded-t-[100px] flex justify-center flex-col items-center -mt-[120px]">
+            <section id="frequently-question" className="w-screen h-[2242px] bg-[#fff] rounded-t-[100px] flex justify-center flex-col items-center -mt-[120px]">
                 <div className="w-[1280px] flex flex-col items-center h-[811px] border-2 border-black">
                     <h1 className="font-bold text-[36px] leading-[43px] text-center text-[#101010]">Frequently Asked Questions</h1>
                     <div className="w-[475px] my-4">
                         <p className=" text-center text-medium leading-6 text-[#737373]">Questions or need help? Use our 'Contact Us' feature to reach our dedicated support team easily.</p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                        <div className="gap-3">
+                            <Faq value="items-1" />
+                            <Faq value="items-2" />
+                        </div>
+                        <div className="gap-3">
+                            <Faq value="items-3" />
+                            <Faq value="items-4" />
+                        </div>
                     </div>
                 </div>
             </section>
