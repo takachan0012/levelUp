@@ -21,10 +21,10 @@ const Faq = (props) => {
                 <AccordionTrigger
                     className="font-bold text-[20px] leading-7"
                     onClick={() => setIsOpen(!isOpen)}
-                >What is the purpose of this website?</AccordionTrigger>
-                <AccordionContent className="border-b-0 border-t-2 p-6">
-                    <p>
-                        This website is designed to provide information about the different types of
+                >{props.title}</AccordionTrigger>
+                <AccordionContent className="border-b-0 border-t  pt-6 border-[#101010]">
+                    <p className="font-bold leading-[25px]">
+                        {props.content}
                     </p>
                 </AccordionContent>
             </AccordionItem>

@@ -595,13 +595,29 @@ const Home = () => {
                         <p className=" text-center text-medium leading-6 text-[#737373]">Questions or need help? Use our 'Contact Us' feature to reach our dedicated support team easily.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-3">
-                        <div className="gap-3">
-                            <Faq value="items-1" />
-                            <Faq value="items-2" />
+                        <div className="flex flex-col gap-3">
+                            <Faq
+                                value="items-1"
+                                title="What Sets Your Online Courses Apart From Others?"
+                                content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
+                            />
+                            <Faq
+                                value="items-1"
+                                title="What Sets Your Online Courses Apart From Others?"
+                                content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
+                            />
                         </div>
-                        <div className="gap-3">
-                            <Faq value="items-3" />
-                            <Faq value="items-4" />
+                        <div className="flex flex-col gap-3">
+                            <Faq
+                                value="items-1"
+                                title="What Sets Your Online Courses Apart From Others?"
+                                content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
+                            />
+                            <Faq
+                                value="items-1"
+                                title="What Sets Your Online Courses Apart From Others?"
+                                content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
+                            />
                         </div>
                     </div>
                 </div>
