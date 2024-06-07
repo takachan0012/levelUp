@@ -39,6 +39,8 @@ import {
     ChallengeCard
 } from "@components/ui/fragments/challengeCard";
 import { Faq } from "@/components/ui/fragments/faq";
+import { ProductCard } from "@/components/ui/fragments/productCard";
+import image from "@assets/icon/image.svg";
 const Home = () => {
     return (
         <div className="h-screen">
@@ -666,8 +668,12 @@ const Home = () => {
                             </Button>
                         </div>
                     </div>
-                    <div>
-
+                    <div className="flex justify-center">
+                        <ProductCard
+                            image={image}
+                            title="Tieats - Food Online Mobile app"
+                            avatar={avatar1}
+                        />
                     </div>
                 </div>
             </section>
