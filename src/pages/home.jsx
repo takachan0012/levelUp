@@ -398,7 +398,7 @@ const Home = () => {
                     </Tabs>
                 </div>
                 <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px]">
-                    <span className="font-bold">view more</span>
+                    <span className="font-bold">View More</span>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
                     </svg>
@@ -649,6 +649,25 @@ const Home = () => {
                                 content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
                             />
                         </div>
+                    </div>
+                </div>
+                <div className="mt-[120px] w-[1480px] h-[973px] border-2 border-black">
+                    <div className="flex justify-center">
+                        <div className="flex justify-between items-center w-[1280px]">
+                            <div>
+                                <h2 className="font-bold text-[36px] leading-[43px]">Explore Horizons: Learn More, Grow More</h2>
+                                <p className="font-medium text-[#91909E] leading-[25px] mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                            <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px]">
+                                <span className="font-bold">View More</span>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
+                                </svg>
+                            </Button>
+                        </div>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </section>
