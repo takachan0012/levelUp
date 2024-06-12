@@ -657,7 +657,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-[120px] w-[1480px] h-[973px] border-2 border-black">
+                <div className="mt-[120px] w-screen h-[973px] border-2 border-black">
                     <div className="flex justify-center">
                         <div className="flex justify-between items-center w-[1280px]">
                             <div>
@@ -672,72 +672,142 @@ const Home = () => {
                             </Button>
                         </div>
                     </div>
-                    <Carousel
-                        plugins={[
-                            AutoScroll({
-                                speed: 2,
-                            })
-                        ]}
-                    >
-                        <CarouselContent>
-                            <CarouselItem key={1} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={2} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image1}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={3} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={4} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image1}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={5} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={6} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image1}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={7} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                            <CarouselItem key={8} className="md:basis-1/5">
-                                <ProductCard
-                                    image={image1}
-                                    title="Tieats - Food Online Mobile app"
-                                    avatar={avatar1}
-                                />
-                            </CarouselItem>
-                        </CarouselContent>
-                    </Carousel>
+                    <div className="w-full mt-[52px]">
+                        <Carousel
+                            plugins={[
+                                AutoScroll({
+                                    speed: 2,
+                                })
+                            ]}
+                        >
+                            <CarouselContent>
+                                <CarouselItem key={1} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={2} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={3} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={4} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={5} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={6} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={7} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={8} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                            </CarouselContent>
+                        </Carousel>
+                        <Carousel
+                            plugins={[
+                                AutoScroll({
+                                    speed: 2,
+                                    direction: "backward"
+                                })
+                            ]}
+                            className="mt-8"
+                        >
+                            <CarouselContent>
+                                <CarouselItem key={1} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={2} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={3} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={4} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={5} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={6} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={7} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                                <CarouselItem key={8} className="md:basis-1/5">
+                                    <ProductCard
+                                        image={image1}
+                                        title="Tieats - Food Online Mobile app"
+                                        avatar={avatar1}
+                                    />
+                                </CarouselItem>
+                            </CarouselContent>
+                        </Carousel>
+                    </div>
                 </div>
             </section>
         </div >
