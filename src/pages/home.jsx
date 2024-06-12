@@ -41,6 +41,10 @@ import {
 import { Faq } from "@/components/ui/fragments/faq";
 import { ProductCard } from "@/components/ui/fragments/productCard";
 import image from "@assets/icon/image.svg";
+import image1 from "@assets/icon/image1.svg";
+import AutoScroll from "embla-carousel-auto-scroll";
+
+
 const Home = () => {
     return (
         <div className="h-screen">
@@ -668,13 +672,72 @@ const Home = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="flex justify-center">
-                        <ProductCard
-                            image={image}
-                            title="Tieats - Food Online Mobile app"
-                            avatar={avatar1}
-                        />
-                    </div>
+                    <Carousel
+                        plugins={[
+                            AutoScroll({
+                                speed: 2,
+                            })
+                        ]}
+                    >
+                        <CarouselContent>
+                            <CarouselItem key={1} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={2} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image1}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={3} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={4} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image1}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={5} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={6} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image1}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={7} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                            <CarouselItem key={8} className="md:basis-1/5">
+                                <ProductCard
+                                    image={image1}
+                                    title="Tieats - Food Online Mobile app"
+                                    avatar={avatar1}
+                                />
+                            </CarouselItem>
+                        </CarouselContent>
+                    </Carousel>
                 </div>
             </section>
         </div >
