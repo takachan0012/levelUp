@@ -595,14 +595,14 @@ const Home = () => {
                     />
                 </div>
             </section>
-            <section id="frequently-question" className="relative w-screen h-fit bg-[#fff] rounded-t-[100px] flex items-center flex-col -mt-[120px]">
-                <div className="w-[1280px] flex flex-col items-center h-[811px] mt-[120px]">
+            <section id="frequently-question" className="w-screen bg-[#fff] rounded-t-[100px] flex items-center flex-col -mt-[120px]">
+                <div className="w-[1280px] flex flex-col items-center h-[811px] mt-[120px] mb-[200px]">
                     <h1 className="font-bold text-[36px] leading-[43px] text-center text-[#101010]">Frequently Asked Questions</h1>
                     <div className="w-[475px] my-4">
                         <p className=" text-center text-medium leading-6 text-[#737373]">Questions or need help? Use our 'Contact Us' feature to reach our dedicated support team easily.</p>
                     </div>
-                    <div className="bg-red-500  h-fit grid grid-cols-2 gap-3">
-                        <div className="flex flex-col gap-3">
+                    <div className="flex gap-3 mb-[120px]">
+                        <div className="h-auto flex flex-col gap-3">
                             <Faq
                                 value="items-1"
                                 title="What Sets Your Online Courses Apart From Others?"
@@ -629,7 +629,7 @@ const Home = () => {
                                 content="Our online courses offer an interactive approach and real-world projects to enhance your practical learning experience"
                             />
                         </div>
-                        <div className="flex flex-col gap-3">
+                        <div className="h-auto flex flex-col gap-3">
                             <Faq
                                 value="items-1"
                                 title="What Sets Your Online Courses Apart From Others?"
@@ -657,187 +657,187 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                </div>
-                <div className="mt-[120px] w-screen h-[973px]">
-                    <div className="flex justify-center">
-                        <div className="flex justify-between items-center w-[1280px]">
-                            <div>
-                                <h2 className="font-bold text-[36px] leading-[43px]">Explore Horizons: Learn More, Grow More</h2>
-                                <p className="font-medium text-[#91909E] leading-[25px] mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </div>
-                            <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px]">
-                                <span className="font-bold">View More</span>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
-                                </svg>
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="w-full mt-[52px]">
-                        <Carousel
-                            plugins={[
-                                AutoScroll({
-                                    speed: 2,
-                                })
-                            ]}
-                        >
-                            <CarouselContent>
-                                <CarouselItem key={1} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={2} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={3} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={4} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={5} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={6} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={7} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={8} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                            </CarouselContent>
-                        </Carousel>
-                        <Carousel
-                            plugins={[
-                                AutoScroll({
-                                    speed: 2,
-                                    direction: "backward"
-                                })
-                            ]}
-                            className="mt-8"
-                        >
-                            <CarouselContent>
-                                <CarouselItem key={1} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={2} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={3} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={4} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={5} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={6} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={7} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                                <CarouselItem key={8} className="md:basis-1/5">
-                                    <ProductCard
-                                        image={image1}
-                                        title="Tieats - Food Online Mobile app"
-                                        avatar={avatar1}
-                                    />
-                                </CarouselItem>
-                            </CarouselContent>
-                        </Carousel>
-                    </div>
-                    <div className="absolute bottom-[158px] w-full flex justify-center">
-                        <div className="w-[1280px] h-[390px] bg-[#6513D0] rounded-[32px] flex justify-between">
-                            <img src={book} alt="icon-book" />
-                            <div className="w-3/4">
-                                <Badges className="w-fit">
-                                    <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d_139_186)">
-                                            <path d="M8.50001 20C12.7526 20 16.5 17 16.5 13C16.5 9 13.5 7 12.5 6C11.0939 4.5939 10.6521 2.74612 10.5254 1.4746C10.4552 0.770672 9.77593 0.271446 9.18639 0.662434C8.03352 1.42702 6.40375 2.98749 5.5 6C4.85747 8.14176 5.5 10 5.5 10C5.5 10 4.5 9.5 4 8C3.8353 7.5059 3.61635 6.90329 3.39675 6.31727C3.08071 5.47387 1.94066 5.48134 1.6629 6.33811C1.11497 8.0282 0.5 10.3031 0.5 12C0.5 17 4.24745 20 8.50001 20Z" fill="white" />
-                                            <path d="M5.27639 10.4472L5.5 10C5.27639 10.4472 5.27617 10.4471 5.27594 10.447L5.27547 10.4468L5.27446 10.4462L5.27215 10.4451L5.26644 10.4421L5.25074 10.4338C5.23842 10.4271 5.22244 10.4182 5.2032 10.4069C5.16471 10.3844 5.11306 10.3523 5.05133 10.3095C4.92795 10.2241 4.76372 10.0958 4.58395 9.91605C4.22311 9.55521 3.80297 8.99006 3.52566 8.15811C3.36384 7.67266 3.14738 7.07672 2.92854 6.49272C2.76959 6.06852 2.26245 6.11008 2.13853 6.49231C1.59086 8.18162 1 10.3897 1 12C1 16.6934 4.49212 19.5 8.50001 19.5C12.555 19.5 16 16.6514 16 13C16 9.81813 13.9949 8.02424 12.7285 6.89129C12.507 6.69312 12.3081 6.51517 12.1464 6.35355C10.6232 4.83029 10.1598 2.84805 10.0278 1.52417C10.0069 1.31422 9.89589 1.15363 9.77825 1.07719C9.67686 1.01132 9.57592 1.00406 9.46274 1.07912C8.39614 1.78649 6.84548 3.25513 5.97891 6.14367C5.68197 7.13348 5.68085 8.06287 5.75607 8.74865C5.79357 9.09055 5.84969 9.36857 5.89565 9.55871C5.9186 9.65367 5.93894 9.72637 5.953 9.77377C5.96003 9.79746 5.96548 9.8148 5.96889 9.82541L5.97242 9.83621L5.97255 9.83661C5.97258 9.8367 5.97261 9.8368 5.97265 9.83689C5.97267 9.83694 5.97268 9.837 5.9727 9.83705C5.97271 9.83708 5.97272 9.83711 5.97273 9.83714C5.97274 9.83715 5.97274 9.83717 5.97275 9.83718C5.97278 9.83729 5.97282 9.83739 5.97286 9.8375C5.97288 9.83756 5.9729 9.83761 5.97292 9.83767C6.03876 10.0295 5.98222 10.2421 5.8297 10.3759C5.6769 10.5099 5.45818 10.5381 5.27639 10.4472Z" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" />
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_d_139_186" x="0.5" y="0.525261" width="18" height="21.4747" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                <feOffset dx="2" dy="2" />
-                                                <feComposite in2="hardAlpha" operator="out" />
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139_186" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139_186" result="shape" />
-                                            </filter>
-                                        </defs>
+                    <div className="w-screen h-[973px]">
+                        <div className="flex justify-center">
+                            <div className="flex justify-between items-center w-[1280px]">
+                                <div>
+                                    <h2 className="font-bold text-[36px] leading-[43px]">Explore Horizons: Learn More, Grow More</h2>
+                                    <p className="font-medium text-[#91909E] leading-[25px] mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                </div>
+                                <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px]">
+                                    <span className="font-bold">View More</span>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
                                     </svg>
-                                    <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
-                                </Badges>
+                                </Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="w-[1440px] h-[342px] bg-[#3B1867] mt-[326px]">
+                        <div className="w-full mt-[52px] mb-[120px]">
+                            <Carousel
+                                plugins={[
+                                    AutoScroll({
+                                        speed: 2,
+                                    })
+                                ]}
+                            >
+                                <CarouselContent>
+                                    <CarouselItem key={1} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={2} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={3} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={4} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={5} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={6} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={7} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={8} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                </CarouselContent>
+                            </Carousel>
+                            <Carousel
+                                plugins={[
+                                    AutoScroll({
+                                        speed: 2,
+                                        direction: "backward"
+                                    })
+                                ]}
+                                className="mt-8"
+                            >
+                                <CarouselContent>
+                                    <CarouselItem key={1} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={2} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={3} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={4} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={5} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={6} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={7} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                    <CarouselItem key={8} className="md:basis-1/5">
+                                        <ProductCard
+                                            image={image1}
+                                            title="Tieats - Food Online Mobile app"
+                                            avatar={avatar1}
+                                        />
+                                    </CarouselItem>
+                                </CarouselContent>
+                            </Carousel>
+                        </div>
+                        <div className="w-full flex justify-center items-center flex-col mt-[120px] ">
+                            <div className="w-[1280px] h-[390px] bg-[#6513D0] rounded-[32px] flex justify-between z-50">
+                                <img src={book} alt="icon-book" />
+                                <div className="w-3/4">
+                                    <Badges className="w-fit">
+                                        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d_139_186)">
+                                                <path d="M8.50001 20C12.7526 20 16.5 17 16.5 13C16.5 9 13.5 7 12.5 6C11.0939 4.5939 10.6521 2.74612 10.5254 1.4746C10.4552 0.770672 9.77593 0.271446 9.18639 0.662434C8.03352 1.42702 6.40375 2.98749 5.5 6C4.85747 8.14176 5.5 10 5.5 10C5.5 10 4.5 9.5 4 8C3.8353 7.5059 3.61635 6.90329 3.39675 6.31727C3.08071 5.47387 1.94066 5.48134 1.6629 6.33811C1.11497 8.0282 0.5 10.3031 0.5 12C0.5 17 4.24745 20 8.50001 20Z" fill="white" />
+                                                <path d="M5.27639 10.4472L5.5 10C5.27639 10.4472 5.27617 10.4471 5.27594 10.447L5.27547 10.4468L5.27446 10.4462L5.27215 10.4451L5.26644 10.4421L5.25074 10.4338C5.23842 10.4271 5.22244 10.4182 5.2032 10.4069C5.16471 10.3844 5.11306 10.3523 5.05133 10.3095C4.92795 10.2241 4.76372 10.0958 4.58395 9.91605C4.22311 9.55521 3.80297 8.99006 3.52566 8.15811C3.36384 7.67266 3.14738 7.07672 2.92854 6.49272C2.76959 6.06852 2.26245 6.11008 2.13853 6.49231C1.59086 8.18162 1 10.3897 1 12C1 16.6934 4.49212 19.5 8.50001 19.5C12.555 19.5 16 16.6514 16 13C16 9.81813 13.9949 8.02424 12.7285 6.89129C12.507 6.69312 12.3081 6.51517 12.1464 6.35355C10.6232 4.83029 10.1598 2.84805 10.0278 1.52417C10.0069 1.31422 9.89589 1.15363 9.77825 1.07719C9.67686 1.01132 9.57592 1.00406 9.46274 1.07912C8.39614 1.78649 6.84548 3.25513 5.97891 6.14367C5.68197 7.13348 5.68085 8.06287 5.75607 8.74865C5.79357 9.09055 5.84969 9.36857 5.89565 9.55871C5.9186 9.65367 5.93894 9.72637 5.953 9.77377C5.96003 9.79746 5.96548 9.8148 5.96889 9.82541L5.97242 9.83621L5.97255 9.83661C5.97258 9.8367 5.97261 9.8368 5.97265 9.83689C5.97267 9.83694 5.97268 9.837 5.9727 9.83705C5.97271 9.83708 5.97272 9.83711 5.97273 9.83714C5.97274 9.83715 5.97274 9.83717 5.97275 9.83718C5.97278 9.83729 5.97282 9.83739 5.97286 9.8375C5.97288 9.83756 5.9729 9.83761 5.97292 9.83767C6.03876 10.0295 5.98222 10.2421 5.8297 10.3759C5.6769 10.5099 5.45818 10.5381 5.27639 10.4472Z" stroke="#101010" stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_139_186" x="0.5" y="0.525261" width="18" height="21.4747" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    <feOffset dx="2" dy="2" />
+                                                    <feComposite in2="hardAlpha" operator="out" />
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_139_186" />
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_139_186" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
+                                    </Badges>
+                                </div>
+                            </div>
+                            <div className="w-[1440px] h-[342px] bg-[#3B1867] -mt-[195px]">
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
