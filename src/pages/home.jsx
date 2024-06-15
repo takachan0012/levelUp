@@ -809,7 +809,7 @@ const Home = () => {
                             </Carousel>
                         </div>
                         <div className="w-full flex justify-center items-center flex-col mt-[120px] ">
-                            <div className="w-[1280px] h-[390px] bg-[#6513D0] rounded-[32px] flex justify-between z-50">
+                            <div className="w-[1280px] h-[390px] bg-[#6513D0] rounded-[32px] flex justify-between z-50 py-9">
                                 <img src={book} alt="icon-book" />
                                 <div className="w-3/4">
                                     <Badges className="w-fit">
@@ -832,10 +832,47 @@ const Home = () => {
                                         </svg>
                                         <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
                                     </Badges>
+                                    <p className="enhance leading-[43px] w-[820px] text-[36px] font-bold text-white p-2 gap-y-4">
+                                        Designing and implementing a transformative
+                                        learning journey strategically.
+                                    </p>
+                                    <p className="mb-9 enhance leading-[25px] w-[693px] font-bold text-white p-2 gap-y-4">
+                                        In a rapidly changing and evolving world, it's crucial for us to design learning experiences
+                                        that are not only incredible but also transformative.
+                                    </p>
+                                    <Button className="bg-[#FFB81E] hover:bg-yellow-500 py-[14px] px-8 flex gap-1 rounded-[2px] w-[320px] h-[60px]">
+                                        <span className="font-bold">Join levelUp</span>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7928 17.7929C12.4023 18.1834 12.4023 18.8166 12.7928 19.2071C13.1833 19.5976 13.8165 19.5976 14.207 19.2071L17.1035 16.3107L20.9999 13.4142C21.781 12.6332 21.781 11.3668 20.9999 10.5858L17.1035 7.68934L14.207 4.79289C13.8165 4.40237 13.1833 4.40237 12.7928 4.79289C12.4023 5.18342 12.4023 5.81658 12.7928 6.20711L15.1893 8.60355L18.5857 11H4.49991C3.94763 11 3.49991 11.4477 3.49991 12C3.49991 12.5523 3.94763 13 4.49991 13H18.5857L15.1893 15.3964L12.7928 17.7929Z" fill="#101010" />
+                                        </svg>
+
+                                    </Button>
                                 </div>
                             </div>
-                            <div className="w-[1440px] h-[342px] bg-[#3B1867] -mt-[195px]">
-
+                            <div className="w-[1440px] h-[342px] bg-[#3B1867] text-white -mt-[195px] flex justify-center items-end">
+                                <div className="w-[1280px] flex justify-between items-center pb-[50px]">
+                                    <div className="flex gap-2">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_0_1086)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05886 0 0 8.05887 0 18C0 27.9411 8.05886 36 18 36ZM23.6154 8.38515C23.8887 7.41424 22.9465 6.84011 22.086 7.45317L10.0738 16.0106C9.14059 16.6754 9.28738 18 10.2943 18H13.4574V17.9755H19.6223L14.5991 19.7479L12.3846 27.6148C12.1113 28.5858 13.0534 29.1599 13.914 28.5468L25.9262 19.9894C26.8594 19.3246 26.7125 18 25.7057 18H20.9089L23.6154 8.38515Z" fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_0_1086">
+                                                    <rect width="36" height="36" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span className="font-extrabold text-[32px] leading-[38px]">LevelUP</span>
+                                    </div>
+                                    <span className="font-medium leading-[19px]">LevelUP Copyright @2024</span>
+                                    <div className="flex gap-3">
+                                        <span>Instagram</span>
+                                        <span>&#8226;</span>
+                                        <span>Facebook</span>
+                                        <span>&#8226;</span>
+                                        <span>Twitter</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
