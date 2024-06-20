@@ -51,7 +51,14 @@ import {
     Navigation,
     NavigationList,
     NavigationLink
-} from "@/components/sections/navigation";
+} from "@components/sections/navigation";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 
 
 
@@ -73,7 +80,7 @@ const Home = () => {
                         </svg>
                         <h1 className="font-extrabold text-3xl">LevelUP</h1>
                     </div>
-                    <NavigationList>
+                    <NavigationList className="hidden md:flex">
                         <NavigationLink to="/course">Course</NavigationLink>
                         <NavigationLink to="/showcase">Showcase</NavigationLink>
                         <NavigationLink to="/challenge">Challenge</NavigationLink>
@@ -84,12 +91,54 @@ const Home = () => {
                             <path fillRule="evenodd" clipRule="evenodd" d="M16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9C2 5.13401 5.13401 2 9 2C12.866 2 16 5.13401 16 9ZM16.0319 14.6177C17.2635 13.078 18 11.125 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C11.125 18 13.078 17.2635 14.6177 16.0319L17.2929 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3166 19.0976 17.6834 18.7071 17.2929L16.0319 14.6177Z" fill="#101010" />
                         </svg>
                     </NavigationList>
-                    <Button className="rounded-[50px] h-12">
+                    <Button className="hidden md:flex rounded-[50px] h-12">
                         <span>Sign in</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.3158 15.9195C16.3158 16.4718 16.7636 16.9195 17.3158 16.9195C17.8681 16.9195 18.3158 16.4718 18.3158 15.9195L18.3158 11.8233L19.0229 7.02C19.0229 5.91543 18.1275 5.02 17.0229 5.02L12.2196 5.7271L8.12345 5.7271C7.57117 5.7271 7.12345 6.17482 7.12345 6.7271C7.12345 7.27939 7.57117 7.7271 8.12345 7.7271L11.5125 7.7271L15.6087 7.02L5.64858 16.9802C5.25805 17.3707 5.25805 18.0038 5.64858 18.3944C6.0391 18.7849 6.67227 18.7849 7.06279 18.3944L17.0229 8.43421L16.3158 12.5304V15.9195Z" fill="#101010" />
                         </svg>
                     </Button>
+                    <div className="block md:hidden">
+                        <DropdownMenu>
+                            <DropdownMenuTrigger className="bg-black-secondary data-[state=open] focus:outline-none rounded-md p-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent className="w-screen max-h-fit border-none mt-6 flex justify-center p-2 bg-[#FFB81E] rounded-md">
+                                <div className="flex flex-col gap-2 items-center w-11/12 border-[#101010] border-t-2 border-r-4 border-b-4 border-l-2 bg-white max-h-fit">
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/course">Course</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/showcase">Showcase</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/challenge">Challenge</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/challenge">Challenge</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/article">Article</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/comunity">Comunity</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <NavigationLink className="w-full" to="/mentor">Mentor</NavigationLink>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem className="w-full  px-4 py-2 rounded-md">
+                                        <Button className="hidden md:flex rounded-[50px] h-12">
+                                            <span>Sign in</span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.3158 15.9195C16.3158 16.4718 16.7636 16.9195 17.3158 16.9195C17.8681 16.9195 18.3158 16.4718 18.3158 15.9195L18.3158 11.8233L19.0229 7.02C19.0229 5.91543 18.1275 5.02 17.0229 5.02L12.2196 5.7271L8.12345 5.7271C7.57117 5.7271 7.12345 6.17482 7.12345 6.7271C7.12345 7.27939 7.57117 7.7271 8.12345 7.7271L11.5125 7.7271L15.6087 7.02L5.64858 16.9802C5.25805 17.3707 5.25805 18.0038 5.64858 18.3944C6.0391 18.7849 6.67227 18.7849 7.06279 18.3944L17.0229 8.43421L16.3158 12.5304V15.9195Z" fill="#101010" />
+                                            </svg>
+                                        </Button>
+                                    </DropdownMenuItem>
+                                </div>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </div>
                 </Navigation>
                 <div id="content-wrap" className="flex justify-between h-[475px] w-[97%] my-[90px]">
                     <div className="w-1/4 relative">
@@ -132,7 +181,7 @@ const Home = () => {
                             </svg>
                             <span>Largest Online Course In Indonesia</span>
                         </Badges>
-                        <p className="enhance text-center leading-[77px] text-[64px] font-extrabold text-white p-2 gap-y-4">
+                        <p className="enhance text-center leading-[77px] text-[64px] font-extrabold  p-2 gap-y-4 text-white">
                             Enhance Your Skills For A Future-Forward Career Trajectory.
                         </p>
                         <p className="text-center w-[500px] font-semibold leading-6">
@@ -199,7 +248,7 @@ const Home = () => {
             </Hero>
             <section id="list-product" className="relative w-screen -mt-32 h-[2117px] bg-[#101010] rounded-b-[100px] flex items-center flex-col z-40">
                 <div className="mt-64 w-[97%] h-[1262px] flex flex-col items-center">
-                    <div className="w-[925px] h-[100px] text-center font-bold text-4xl text-white flex flex-col items-center">
+                    <div className="w-[925px] h-[100px] text-center font-bold text-4xl  flex flex-col items-center">
                         <span>Mastering Your Skills With Real-World</span>
                         <span>Projects Essential In Today's Professional Landscape</span>
                     </div>
@@ -424,7 +473,7 @@ const Home = () => {
                     >
                         <div className="h-[244px]">
                             <div className="w-[360px] flex justify-center flex-col items-center gap-4 mb-4">
-                                <h2 className="text-white text-[36px] font-bold leading-[54px]">Real Success Stories From Our Students</h2>
+                                <h2 className=" text-[36px] font-bold leading-[54px]">Real Success Stories From Our Students</h2>
                                 <p className="font-medium text-[#91909E]">Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. </p>
                             </div>
@@ -507,7 +556,7 @@ const Home = () => {
                     />
                     <BenefitCard
                         children="The Advantages Of Learning Online On The Bimore Platform."
-                        className="p-0 flex items-center bg-transparent border-none text-white"
+                        className="p-0 flex items-center bg-transparent border-none "
                     />
                     <BenefitCard
                         icon={privateGroup}
@@ -556,9 +605,9 @@ const Home = () => {
                             </svg>
                             <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
                         </Badges>
-                        <span className="text-white text-shadow-sm font-bold text-[36px] leading-[43px] text-center">Learning Quests: Interactive Challenges
+                        <span className=" text-shadow-sm font-bold text-[36px] leading-[43px] text-center">Learning Quests: Interactive Challenges
                             for Skill Mastery</span>
-                        <p className="text-shadow-sm font-semibold text-white text-center mt-4 mb-[52px]">Learning journey with our series of interactive challenges designed for skill mastery.</p>
+                        <p className="text-shadow-sm font-semibold  text-center mt-4 mb-[52px]">Learning journey with our series of interactive challenges designed for skill mastery.</p>
                         <Button className="py-[14px] px-8 flex gap-1 rounded-[2px] w-[204px] h-[60px] bg-[#FFB81E]">
                             <span className="font-bold">Start Learning</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -839,11 +888,11 @@ const Home = () => {
                                         </svg>
                                         <span className="font-bold text-[14px] leading-4 text-shadow-sm">New! Our Latest Challange</span>
                                     </Badges>
-                                    <p className="enhance leading-[43px] w-[820px] text-[36px] font-bold text-white p-2 gap-y-4">
+                                    <p className="enhance leading-[43px] w-[820px] text-[36px] font-bold  p-2 gap-y-4">
                                         Designing and implementing a transformative
                                         learning journey strategically.
                                     </p>
-                                    <p className="mb-9 enhance leading-[25px] w-[693px] font-bold text-white p-2 gap-y-4">
+                                    <p className="mb-9 enhance leading-[25px] w-[693px] font-bold  p-2 gap-y-4">
                                         In a rapidly changing and evolving world, it's crucial for us to design learning experiences
                                         that are not only incredible but also transformative.
                                     </p>
@@ -856,7 +905,7 @@ const Home = () => {
                                     </Button>
                                 </div>
                             </div>
-                            <div className="w-[1440px] h-[342px] bg-[#3B1867] text-white -mt-[195px] flex justify-center items-end">
+                            <div className="w-[1440px] h-[342px] bg-[#3B1867]  -mt-[195px] flex justify-center items-end">
                                 <div className="w-[1280px] flex justify-between items-center pb-[50px]">
                                     <div className="flex gap-2">
                                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

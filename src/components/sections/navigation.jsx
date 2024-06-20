@@ -7,7 +7,7 @@ const Navigation = forwardRef(({ className, ...props }, ref) => (
 Navigation.displayName = "Navigation";
 
 const NavigationList = forwardRef(({ className, ...props }, ref) => (
-    <div className={cn("w-3/4 px-2 lg:w-[977px] flex gap-3 lg:gap-[30px] justify-center items-center", className)} ref={ref} {...props} />
+    <div className={cn("w-3/4 px-2 lg:w-[977px] gap-3 lg:gap-[30px] justify-center items-center", className)} ref={ref} {...props} />
 ));
 NavigationList.displayName = "NavigationList";
 
